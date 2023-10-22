@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header.main-header {
+    background-color: #dbc441;
+    padding: 20px;
+}
+
+.main-header-nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
