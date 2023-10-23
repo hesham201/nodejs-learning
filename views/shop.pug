@@ -1,0 +1,17 @@
+extends layouts/main-layout.pug 
+block content
+    main 
+        if prods.length>0
+            .grid 
+                each product in prods
+                    article.card-header 
+                        h1.product-title #{product.title} 
+                        .card-image 
+                            img(src="https://media.istockphoto.com/id/1477509958/photo/website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us.jpg?s=2048x2048&w=is&k=20&c=XuCP4J7_wHPfduLN7O9Pcvz6efWMTNChpvs570Ve4no=")
+                        .card-content 
+                            h2.product-price $199.9
+                            p.product-description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro omnis deleniti, natus harum sit vitae dolores animi culpa molestias deserunt amet autem ipsum ipsa laudantium quo facere officiis quaerat aspernatur.
+                        .card-actions 
+                            button.btn add to cart
+        else 
+            h1 no products
